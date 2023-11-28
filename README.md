@@ -4,7 +4,13 @@ This repository contains a deep learning (DL)-based artificial intelligence (AI)
 
 # Manual on how to use the repo:
 
-1. Create conda environment from yml file using the following script:
+1. Clone the repo to your local machine using terminal via the following script:
+
+```python
+git clone https://github.com/bekhzod-olimov/BrainTumorClassification.git
+```
+
+2. Create conda environment from yml file using the following script:
 ```python
 conda env create -f environment.yml
 ```
