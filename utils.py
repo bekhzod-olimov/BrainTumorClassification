@@ -93,6 +93,12 @@ class DrawLearningCurves():
         
         self.lc, self.save_path = learning_curves, save_path
         
+    def plot(self, metric, label):  plt.plot(self.lc[metric], label = label)
+        
+    def decorate(self, ylabel, title): plt.title(title); plt.xlabel("Epochs"); plt.ylabel(ylabel); plt.legend()
+    
+    def save_learning_curves(self):
+        
         self.visualize(metric1 = "tr_losses", metric2 = "val_losses", label1 = "Train Loss", 
                        label2 = "Validation Loss", title = "Loss Learning Curve", 
                        ylabel = "Loss Scores", fname = "loss_learning_curves")
@@ -100,32 +106,6 @@ class DrawLearningCurves():
         self.visualize(metric1 = "tr_accs", metric2 = "val_accs", label1 = "Train Accuracy", 
                        label2 = "Validation Accuracy", title = "Accuracy Score Learning Curve", 
                        ylabel = "Accuracy Scores", fname = "acc_learning_curves")
-        
-#     def plot(self, ax, metric, label): 
-#         ax.plot(self.lc[metric], label = label)
-#         ymax = max(self.lc[metric])
-#         x = np.arange(1, len(self.lc[metric]) + 1)
-#         xpos = self.lc[metric].index(ymax)
-#         xmax = x[xpos]
-#         print(xmax, ymax)
-#         ax.annotate('local max', xy=(xmax, ymax), xytext=(xmax, ymax+5),
-#             arrowprops=dict(facecolor='black', shrink=0.05),
-#             )
-    
-#     def decorate(self, ylabel, title): plt.title(title); plt.xlabel("Epochs"); plt.ylabel(ylabel); plt.legend(); plt.show()
-    
-#     def visualize(self, metric1, metric2, label1, label2, title, ylabel, fname):
-        
-#         fig = plt.figure(figsize=(10, 5))
-#         ax = fig.add_subplot(111)
-        
-#         self.plot(ax, metric1, label1); self.plot(ax, metric2, label2)
-#         self.decorate(ylabel, title); plt.xticks(np.arange(len(self.lc[metric1])), [i for i in range(1, len(self.lc[metric1]) + 1)])               
-#         plt.savefig(f"{self.save_path}/{fname}.png")
-            
-    def plot(self, metric, label):  plt.plot(self.lc[metric], label = label)
-        
-    def decorate(self, ylabel, title): plt.title(title); plt.xlabel("Epochs"); plt.ylabel(ylabel); plt.legend(); plt.show()
     
     def visualize(self, metric1, metric2, label1, label2, title, ylabel, fname):
         
@@ -133,14 +113,3 @@ class DrawLearningCurves():
         self.plot(metric1, label1); self.plot(metric2, label2)
         self.decorate(ylabel, title); plt.xticks(np.arange(len(self.lc[metric1])), [i for i in range(1, len(self.lc[metric1]) + 1)])               
         plt.savefig(f"{self.save_path}/{fname}.png")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
