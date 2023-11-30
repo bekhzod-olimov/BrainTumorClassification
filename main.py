@@ -53,7 +53,7 @@ def run(args):
                     loss_fn = loss_fn, optimizer = optimizer, epochs = args.epochs, 
                     save_dir = "saved_models", save_prefix = "brain")
     
-    DrawLearningCurves(results, args.stats_dir)
+    DrawLearningCurves(results, args.stats_dir).save_learning_curves()
     
 if __name__ == "__main__":
     
