@@ -1,3 +1,4 @@
+# Import libraries
 import torch, yaml, os, pickle, timm, argparse
 from utils import get_state_dict, get_preds, visualize, grad_cam
 
@@ -13,7 +14,7 @@ def run(args):
         
     Output:
     
-        train process.
+        inference process.
     
     """
     
