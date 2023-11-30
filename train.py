@@ -19,7 +19,6 @@ def train(tr_dl, val_dl, m, device, loss_fn, optimizer, epochs, threshold = 0.01
         epoch_loss, epoch_acc = 0, 0
         for idx, batch in tqdm(enumerate(tr_dl)):
             
-            if idx == 2: break
             ims, gts = to_device(batch, device)
             
             loss, epoch_loss, epoch_acc = get_metrics(m, ims, gts, loss_fn, epoch_loss, epoch_acc)
@@ -37,7 +36,6 @@ def train(tr_dl, val_dl, m, device, loss_fn, optimizer, epochs, threshold = 0.01
         with torch.no_grad():
             val_epoch_loss, val_epoch_acc = 0, 0
             for idx, batch in enumerate(val_dl):
-                if idx == 2: break
                 ims, gts = batch
                 ims, gts = ims.to(device), gts.to(device)
 
