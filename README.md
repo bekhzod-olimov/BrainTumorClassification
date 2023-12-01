@@ -18,3 +18,8 @@ Then activate the environment using the following command:
 ```python
 conda activate speed
 ```
+
+3. Data Visualization
+
+![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/97f6f557-2858-41ef-be88-39c9076764c4)
+
