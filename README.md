@@ -36,3 +36,11 @@ The training process progress:
 
 ![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/e23d91c3-94f3-48ff-9709-3d0a795e0be2)
 
+5. Conduct inference using the trained model:
+```python
+python inference.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
+```
+
+The inference progress:
+
+![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/3e42d081-738f-431e-a993-ee5455849a26)
