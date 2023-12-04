@@ -27,10 +27,10 @@ conda activate speed
 ```python
 python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
 ```
-The training parameters can be changed using the following information:
 
+The training parameters can be changed using the following information:
 ![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/f41f2ada-bb1f-4fb7-b34b-f27134c5e015)
 
-
+The training process progress:
 ![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/e23d91c3-94f3-48ff-9709-3d0a795e0be2)
 
