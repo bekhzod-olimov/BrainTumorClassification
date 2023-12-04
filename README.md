@@ -23,3 +23,8 @@ conda activate speed
 
 ![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/97f6f557-2858-41ef-be88-39c9076764c4)
 
+4. Train the AI model using the following script:
+```python
+python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
+```
+The training parameters can be changed using the following information:
