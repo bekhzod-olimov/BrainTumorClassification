@@ -57,10 +57,13 @@ The inference progress:
 
 ![image](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/3e42d081-738f-431e-a993-ee5455849a26)
 
-7. Inference Results:
+7. Inference Results (Predictions):
 
 ![brain_preds](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/e3b1c13f-6032-4a99-9a7b-a32443a780c5)
 
+8. Inference Results (GradCAM):
+
+![brain_gradcam](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/75aa399c-07aa-4ea9-b25f-ad3c9e15c6ea)
 
 
 
