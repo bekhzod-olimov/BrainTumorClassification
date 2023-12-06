@@ -1,5 +1,3 @@
-![brain_preds](https://github.com/bekhzod-olimov/BrainTumorClassification/assets/50166164/20e90bf5-cdc2-4c64-8882-3bdb2e05057b)# BrainTumorClassification
-
 This repository contains a deep learning (DL)-based artificial intelligence (AI) image classification model training to classify brain tumors. The AI model used for the classification task is RexNet ([paper](https://arxiv.org/pdf/2007.00992.pdf) and [code](https://github.com/clovaai/rexnet)) and the dataset for training is [Computed Tomography (CT) of the Brain](https://www.kaggle.com/datasets/trainingdatapro/computed-tomography-ct-of-the-brain/).
 
 # Manual on how to use the repo:
