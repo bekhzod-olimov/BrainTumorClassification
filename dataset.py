@@ -47,15 +47,27 @@ class CustomDataset(Dataset):
 
         """
 
-        This function gets an index and 
-        
-        
+        This function gets an index and return pair of image and gt.
+
+        Parameter:
+
+            idx         - index, int;
+
+        Outputs:
+
+            im          - an input image, tensor;
+            gt          - class label, int.
+                
         """
         
+        # Get an image path
         im_path = self.im_paths[idx]
+        # Read an image
         im = Image.open(im_path)
+        # Get the class name
         gt = self.cls_names[self.get_class(im_path)]
         
+        # Apply transformations
         if self.transformations is not None: im = self.transformations(im)
         
         return im, gt
